@@ -8,10 +8,10 @@
 [Demo video for achievement scanning](https://github.com/xenesty/AkashaScanner/discussions/3)
 
 
-## Table of Contents
+## Содержание
 
-- [Особенности](#features)
-- [Начало работы](#getting-started)
+- [Особенности](#Особенности)
+- [Начало работы](#Начало работы)
 - [Usage](#usage)
 - [FAQ](#faq)
 - [Roadmap](#roadmap)
@@ -22,7 +22,7 @@
 - [License](#license)
 
 
-## Features
+## Особенности
 
 - Сканирует достижения, персонажей, артефакты и оружие, автоматически делая и анализируя скриншоты игры
 - Экспортирует достижения (и персонажей) в формат, совместимый с [Paimon.moe](https://paimon.moe) и [Seelie.me](https://seelie.me) - инструмент для отслеживания прогресса достижений.
