@@ -1,14 +1,17 @@
 # Akasha Scanner
 
-A Genshin Impact tool that extracts your account data, including achievements, characters, artifacts, and weapons.
+Инструмент Genshin Impact, который извлекает данные вашей учетной записи, включая достижения, персонажей, артефакты и оружие.
+Оригинал ветки и софта : [AkashaScanner](https://github.com/xenesty/AkashaScanner) 
+
+Ветку и софт перевёл: [ilfae](https://github.com/ilfae)
 
 [Demo video for achievement scanning](https://github.com/xenesty/AkashaScanner/discussions/3)
 
 
 ## Table of Contents
 
-- [Features](#features)
-- [Getting Started](#getting-started)
+- [Особенности](#features)
+- [Начало работы](#getting-started)
 - [Usage](#usage)
 - [FAQ](#faq)
 - [Roadmap](#roadmap)
@@ -21,165 +24,164 @@ A Genshin Impact tool that extracts your account data, including achievements, c
 
 ## Features
 
-- Scans achievements, characters, artifacts, and weapons by taking and analyzing screenshots of the game automatically
-- Exports achievements (and characters) to a format compatible with [Paimon.moe](https://paimon.moe) and [Seelie.me](https://seelie.me), a tool for you to track your achievement progress
-- Exports game data in `GOOD`,
-a format compatible with tools like
+- Сканирует достижения, персонажей, артефакты и оружие, автоматически делая и анализируя скриншоты игры
+- Экспортирует достижения (и персонажей) в формат, совместимый с [Paimon.moe](https://paimon.moe) и [Seelie.me](https://seelie.me) - инструмент для отслеживания прогресса достижений.
+- Экспортирует игровые данные в `GOOD`,
+формат, совместимый с такими инструментами, как
 [Genshin Optimizer](https://frzyc.github.io/genshin-optimizer),
 [GI DMG Calculator](https://gidmgcalculator.github.io/csb-g7is6)
-and [Aspirine's Genshin Impact Calculator](https://genshin.aspirine.su).
+и [Aspirine's Genshin Impact Calculator](https://genshin.aspirine.su).
 
-> **Note**
+> **Примечание**
 >
-> This project is currently in beta. It is useable right now, but future changes may invalidate your existing scanned data.
+> Этот проект находится в стадии бета-версии. Его можно использовать прямо сейчас, но будущие изменения могут сделать недействительными ваши существующие данные сканирования.
 
 
-## Getting Started
+## Начало работы
 
-Download the latest version of the Akasha Scanner [here](https://github.com/xenesty/AkashaScanner/releases/latest) and unzip its files.
+Скачайте последнюю версию Akasha Scanner [здесь](https://github.com/xenesty/AkashaScanner/releases/latest) и распакуйте его файлы.
 
-You need Genshin Impact installed on your computer.
-You will also need to install
+На вашем компьютере должен быть установлен Genshin Impact.
+Вам также потребуется установить
 [Microsoft Visual C++ Redistributable](https://docs.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022)
-([Direct download link](https://aka.ms/vs/17/release/vc_redist.x64.exe))
+([Прямая ссылка на скачивание](https://aka.ms/vs/17/release/vc_redist.x64.exe)).
 
-To launch the program, open `AkashaScanner.exe`.
-It will ask for Administrator permissions,
-which is required to take control of the game.
+Чтобы запустить программу, откройте `AkashaScanner.exe`.
+Программа запросит права Администратора,
+которые необходимы для управления игрой.
 
-__A few important settings:__
-1. Game language must be English
-2. The game window should not be wider than 16:9 and not smaller than 1280x720
-3. During the scan, the entire game screen should remain visible (no off-screen portion, and nothing covers the game window)
-4. Turn off any color filters, such as Reshade, Windows Night Light, F.lux, Nvidia Filters, and Color-blind tools that you may be running
+Несколько важных настроек:__.
+1. Язык игры должен быть английским
+2. Окно игры должно быть не шире 16:9 и не меньше 1280x720
+3. Во время сканирования весь экран игры должен оставаться видимым (не должно быть части за пределами экрана, и ничто не закрывает игровое окно).
+4. Отключите все цветовые фильтры, такие как Reshade, Windows Night Light, F.lux, Nvidia Filters и Color-blind tools, которые могут быть запущены.
 
+## Использование
 
-## Usage
+Выберите сканер из левого меню.
+Чтобы начать сканирование, следуйте инструкциям на странице.
 
-Select a scanner from the left menu.
-You can follow the instructions on the page to start scanning.
+Не используйте мышь или клавиатуру во время сканирования.
+Сканер использует ввод данных с мыши и клавиатуры для автоматизации сканирования.
 
-Do not use your mouse or keyboard while scanning.
-The scanner uses mouse and keyboard input to automate the scanning.
-
-If you want to interrupt the scan, you may minimize or exit the game using hotkeys like Alt+Tab or Win+D.
-If you interrupt the scan, keep in mind that all progress will be lost.
+Если вы хотите прервать сканирование, вы можете свернуть или выйти из игры с помощью горячих клавиш Alt+Tab или Win+D.
+Если вы прервете сканирование, имейте в виду, что весь прогресс будет потерян.
 
 
 ## FAQ
 
-### Why is it called Akasha Scanner?
-This project aims to provide a way for players to extract data from the game
-and share them with other tools, which resembles an
-[in-game device](https://genshin-impact.fandom.com/wiki/Akasha_System) 
-that transfers and shares information.
+### Почему проект называется Akasha Scanner?
+Цель этого проекта - предоставить игрокам возможность извлекать данные из игры
+и делиться ими с другими инструментами, что напоминает
+[внутриигровое устройство](https://genshin-impact.fandom.com/wiki/Akasha_System) 
+которое передает и делится информацией.
 
-### Will I get banned by the game from using the Akasha Scanner?
-Probably not, according to [this](https://genshin.hoyoverse.com/en/news/detail/5763) official article.
+### Будет ли мне запрещено игрой использовать сканер Акаша?
+Скорее всего, нет, согласно [этой](https://genshin.hoyoverse.com/en/news/detail/5763) официальной статье.
 
-In addition, similar software like the [Inventory Kamera](https://github.com/Andrewthe13th/Inventory_Kamera)
-and [AdeptiScanner-GI](https://github.com/D1firehail/AdeptiScanner-GI)
-have been around for a while, and no one has been banned from using these applications.
+Кроме того, аналогичные программы, такие как [Inventory Kamera](https://github.com/Andrewthe13th/Inventory_Kamera)
+и [AdeptiScanner-GI](https://github.com/D1firehail/AdeptiScanner-GI)
+существуют уже давно, и никому не было запрещено использовать эти приложения.
 
-However, there is no guarantee that HoYoverse will not take any actions against the scanner.
-Use at your own risk.
+Однако нет никакой гарантии, что HoYoverse не предпримет никаких действий против сканера.
+Используйте на свой страх и риск.
 
-### How does the Akasha Scanner work?
-It uses mouse and keyboard inputs to navigate through your achievements/characters/inventory,
-and take screenshots of them.
+### Как работает сканер Akasha?
+Он использует мышь и клавиатуру для навигации по вашим достижениям/персонажам/инвентарю,
+и делать их скриншоты.
 
-There are a couple of techniques used to analyze the screenshots.
-The first is known as [Optical character recognition (OCR)](https://en.wikipedia.org/wiki/Optical_character_recognition)
-using [Tesseract](https://github.com/tesseract-ocr/tesseract).
-It is mainly used to identify text from images.
-For example, the names and levels of weapons/artifacts/characters are identified this way.
+Для анализа скриншотов используется несколько методов.
+Первая известна как [Оптическое распознавание символов (OCR)](https://en.wikipedia.org/wiki/Optical_character_recognition).
+с использованием [Tesseract](https://github.com/tesseract-ocr/tesseract).
+Он в основном используется для идентификации текста из изображений.
+Например, таким образом определяются названия и уровни оружия/артефактов/персонажей.
 
-Other things like counting the number of stars of achievements/artifacts
-use object recognition provided by [OpenCV](https://opencv.org).
+Другие вещи, такие как подсчет количества звезд достижений/артефактов
+используют распознавание объектов, предоставляемое [OpenCV](https://opencv.org).
 
-### How reliable are the scan results?
-I would say it is currently pretty accurate, but it is not perfect.
+### Насколько достоверны результаты сканирования?
+Я бы сказал, что в настоящее время результаты довольно точные, но они не идеальны.
 
-For example, identifying the number `1` is quite tricky for the OCR,
-particularly in characters' talent levels.
-Also, random snowflakes covering the character's name and level can mess up the OCR.
+Например, распознавание числа `1` является довольно сложным для OCR,
+особенно в уровнях талантов персонажей.
+Кроме того, случайные снежинки, покрывающие имя и уровень персонажа, могут испортить OCR.
 
-Using a higher resolutions would greatly increase the accuracy.
-I personally uses 1920x1080, and it is working quite well for me.
+Использование более высокого разрешения значительно повысит точность.
+Лично я использую разрешение 1920x1080, и оно работает достаточно хорошо.
 
-### Can I edit the scan result if it is inaccurate?
-I will work on this shortly. Stay tuned for a new release!
+### Могу ли я редактировать результат сканирования, если он неточный?
+Я буду работать над этим в ближайшее время. Следите за новостями в новом релизе!
 
-For now, you can modify the JSON file under the `ScannedData` folder.
-I may consider writing a document about the JSON file schema,
-though I think they are pretty self-explanatory.
+Пока что вы можете изменить JSON-файл в папке `ScannedData`.
+Возможно, я подумаю о написании документа о схеме JSON-файла,
+хотя я думаю, что они достаточно понятны.
 
-### How do I import the scan results to Paimon.moe/Seelie.me?
-First, export your scan results to a format compatible with Paimon.moe/Seelie.me using the Akasha Scanner.
-Then, go to [Paimon.moe](https://paimon.moe/settings) or [Seelie.me](https://seelie.me/settings).
-Select "Export & Import Data" and import the file you just exported.
+### Как импортировать результаты сканирования на Paimon.moe/Seelie.me?
+Сначала экспортируйте результаты сканирования в формат, совместимый с Paimon.moe/Seelie.me, используя Akasha Scanner.
+Затем зайдите на сайт [Paimon.moe](https://paimon.moe/settings) или [Seelie.me](https://seelie.me/settings).
+Выберите "Экспорт и импорт данных" и импортируйте файл, который вы только что экспортировали.
 
-### I have other questions
-You may want to check [this](https://github.com/xenesty/AkashaScanner/discussions) out and search for answers.
-If you don't find any, please feel free to start a new discussion. :)
-
-
-## Roadmap
-
-The following is just a to-do list for me to follow.
-
-* [ ] Interrupt scan with hotkeys
-* [ ] Scan lock status of weapons and artifacts
-* [ ] Show captured screenshots during the scan
-* [ ] Reduce CPU load while scanning weapons and artifacts by replacing OCR with image template matching
-* [ ] Validate scanned data
-* [ ] View scanned achievements
-* [ ] Edit scanned achievements
-* [ ] View scanned characters, artifacts, and weapons
-* [ ] Edit scanned characters, artifacts, and weapons
-* [ ] Save incompleted scan
-* [ ] Add support to delete scanned data
-* [ ] Add debug mode
-* [ ] Add support to scan materials and character materials
-* [ ] Add a notice when there is nothing to export
-* [ ] Make a better home page than the current one
-* [ ] Need a better icon
+### У меня есть другие вопросы
+Вы можете заглянуть на [this](https://github.com/xenesty/AkashaScanner/discussions) и поискать там ответы.
+Если вы их не найдете, пожалуйста, не стесняйтесь начать новое обсуждение :)
 
 
-## Contributing
+## Дорожная карта
 
-All contributions are welcome!
+Следующее - это просто список дел, которые я должен выполнить.
 
-### Reporting Bugs
-
-If you run into any weird behavior while using the Akasha Scanner,
-feel free to open a new issue in this repository.
-Please run a search before opening a new issue,
-to make sure that no one has already reported or solved the bug you found.
-
-Please provide as much information as possible,
-for example log files (under the `Logs` directory),
-your system configurations (game window resolution and your monitor resolution)
-and/or screenshots of your game
-(__make sure you erase your UID in the bottom right corner!__)
-
-### Submitting Pull Requests
-All pull requests are greatly appreciated.
-You may want to take a look with
-[opened issues](https://github.com/xenesty/AkashaScanner/issues?q=is%3Aopen+is%3Aissue)
-if you are looking for somewhere to start.
-
-I am also not very experienced with C# and .NET Core
-(in fact, this is my first time writing in C#).
-So if I did anything stupid, please kindly point it out.
-
-(Also I need help fixing my English >.<)
+* [ ] Прерывание сканирования с помощью горячих клавиш
+* [ ] Сканировать статус блокировки оружия и артефактов.
+* [ ] Показывать захваченные скриншоты во время сканирования
+* [ ] Снизить нагрузку на процессор при сканировании оружия и артефактов путем замены OCR на сопоставление шаблонов изображений
+* [ ] Проверка отсканированных данных
+* [ ] Просмотр отсканированных достижений
+* [ ] Редактирование отсканированных достижений
+* [ ] Просмотр отсканированных персонажей, артефактов и оружия
+* [ ] Редактирование отсканированных персонажей, артефактов и оружия
+* [ ] Сохранить незавершенное сканирование
+* [ ] Добавить поддержку удаления отсканированных данных
+* [ ] Добавить режим отладки
+* [ ] Добавить поддержку сканирования материалов и материалов персонажей
+* [ ] Добавить уведомление, когда нечего экспортировать
+* [ ] Сделать главную страницу лучше, чем текущая.
+* [ ] Нужна лучшая иконка
 
 
-## Acknowledgements
+## Вклад
 
-Shout out to [Inventory Kamera](https://github.com/Andrewthe13th/Inventory_Kamera) for inspiring the work.
+Любой вклад приветствуется!
+
+### Сообщение об ошибках
+
+Если вы столкнулись с каким-либо странным поведением при использовании сканера Akasha,
+не стесняйтесь открыть новую проблему в этом репозитории.
+Пожалуйста, выполните поиск, прежде чем открывать новую проблему,
+чтобы убедиться, что никто еще не сообщил или не решил найденную вами ошибку.
+
+Пожалуйста, предоставьте как можно больше информации,
+например, файлы журналов (в директории `Logs`),
+конфигурации вашей системы (разрешение окна игры и разрешение вашего монитора)
+и/или скриншоты вашей игры
+(__убедитесь, что вы стерли свой UID в правом нижнем углу!__)
+
+### Отправка запросов на исправление
+Все запросы на исправление очень ценятся.
+Вы можете взглянуть на
+[открытые проблемы](https://github.com/xenesty/AkashaScanner/issues?q=is%3Aopen+is%3Aissue)
+если вы ищете, с чего начать.
+
+У меня также нет большого опыта работы с C# и .NET Core
+(на самом деле, это мой первый раз, когда я пишу на C#).
+Так что если я сделал что-то глупое, пожалуйста, укажите на это.
+
+(Также мне нужна помощь в исправлении моего английского >.<)
 
 
-## License
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/xenesty/AkashaScanner/blob/master/LICENSE.txt)
+## Благодарности
+
+Выражаю благодарность [Inventory Kamera](https://github.com/Andrewthe13th/Inventory_Kamera) за вдохновение в работе.
+
+
+## Лицензия
+[![Лицензия: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/xenesty/AkashaScanner/blob/master/LICENSE.txt)
