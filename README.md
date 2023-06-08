@@ -1,6 +1,7 @@
 # Akasha Scanner на русском
 
 Инструмент Genshin Impact, который извлекает данные вашей учетной записи, включая достижения, персонажей, артефакты и оружие.
+
 Оригинал ветки и софта : [AkashaScanner](https://github.com/xenesty/AkashaScanner) 
 
 [Демонстрационное видео для сканирования достижений](https://github.com/xenesty/AkashaScanner/discussions/3)
