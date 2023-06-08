@@ -10,16 +10,16 @@
 
 <Scanner Model="@Data" Enabled="@Enabled" OnSubmit="@HandleSubmit">
     <Instructions>
-        <li>Update game data below if needed.</li>
-        <li>Fill in the options below (Optional).</li>
-        <li>Start the game. Game is currently <ProcessStatusDisplay />.</li>
-        <li>Open your characters screen and sort your characters by level in descending order.</li>
-        <li>Select your first character and make sure the left menu (Attributes, Weapons, Artifacts, etc.) is entirely visible.</li>
-        <li>Click the "Start" button below to start scanning. Please do not move the mouse or press any buttons.</li>
-        <li>If you wish to interrupt the scan, minimize or exit the game (using Alt+Tab).</li>
+        <li>При необходимости обновите приведенные ниже данные об игре.</li>
+        <li>Заполните приведенные ниже параметры (необязательно).</li>
+        <li>Начните игру. В данный момент игра находится в режиме <ProcessStatusDisplay />.</li>
+        <li>Откройте экран "Ваши персонажи" и отсортируйте их по уровню в порядке убывания.</li>
+        <li>Выберите своего первого персонажа и убедитесь, что левое меню (Атрибуты, оружие, артефакты и т.д.) полностью видно.</li>
+        <li>Нажмите кнопку "Старт" ниже, чтобы начать сканирование. Пожалуйста, не перемещайте мышь и не нажимайте никаких кнопок.</li>
+        <li>Если вы хотите прервать сканирование, сверните игру или выйдите из нее (используя Alt+Tab).</li>
     </Instructions>
     <DataUpdates>
-        <DataUpdate Title="Characters" Collection="@CharacterCollection" Status="@CharacterCollectionStatus" EntryType="@(typeof(CharacterEntry))" />
+        <DataUpdate Title="Персонажи" Collection="@CharacterCollection" Status="@CharacterCollectionStatus" EntryType="@(typeof(CharacterEntry))" />
     </DataUpdates>
     <Options>
         <Field Label="@MinLevelLabel">
@@ -32,8 +32,8 @@
 </Scanner>
 
 @code {
-    private const string MinLevelLabel = "Minimum Level";
-    private const string WandererNameLabel = "Wanderer's Name";
+    private const string MinLevelLabel = "Минимальный уровень";
+    private const string WandererNameLabel = "Имя странника";
 
     private ICharacterConfig Data = new DefaultFormData();
 

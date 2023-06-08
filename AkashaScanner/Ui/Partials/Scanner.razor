@@ -1,7 +1,7 @@
 ﻿@inherits RazorComponent
 
 <div class="cards">
-    <Section Title="Instructions">
+    <Section Title="Инструкции">
         <ol class="instructions">
             @Instructions
         </ol>
@@ -13,7 +13,7 @@
     {
         @if (Context != null)
         {
-            <Section Title="Options">
+            <Section Title="Опции">
                 <Form Context="Context">
                     @Options
                 </Form>
@@ -21,25 +21,25 @@
         }
         else
         {
-            <Section Title="Options">
+            <Section Title="Опции">
                 @Options
             </Section>
         }
     }
 </div>
 <div class="actions">
-    <button type="button" class="button button--primary button--action" disabled="@(!BtnEnabled)" @onclick="HandleSubmit">Start</button>
+    <button type="button" class="button button--primary button--action" disabled="@(!BtnEnabled)" @onclick="HandleSubmit">Старт</button>
 </div>
 <Modal Visible="@ShowModal">
     <div class="modal__content">
         @if (Status == ScanStatus.Running)
         {
-            <div>Scanning in progress</div>
+            <div>Выполняется сканирование</div>
             <Loading />
         }
         else if (Status == ScanStatus.Canceling)
         {
-            <div>Canceling</div>
+            <div>Отмена</div>
             <Loading />
         }
         else
@@ -57,7 +57,7 @@
                 </div>
             }
             <div class="status-text">@Status</div>
-            <button type="button" class="button button--primary" @onclick="HandleCloseModal">Close</button>
+            <button type="button" class="button button--primary" @onclick="HandleCloseModal">Закрыть</button>
         }
     </div>
 </Modal>

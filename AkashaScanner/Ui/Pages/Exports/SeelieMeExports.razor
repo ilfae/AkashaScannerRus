@@ -11,16 +11,16 @@
 <ExportLayout Enabled="@(AchievementSelectedFile != null)" OnSubmit="@HandleSubmit">
     <div>
         <div class="import__notice">
-            If you use Seelie.me not only for achievement tracking,
-            consider exporting data from <a class="link" href="https://seelie.me/settings" target="_blank">Seelie.me</a> first and
-            importing it below so it will not override your existing data.
+            Если вы используете Seelie.me не только для отслеживания достижений,
+             сначала экспортируйте данные из <a class="link" href="https://seelie.me/settings" target="_blank">Seelie.me</a> , а затем
+            импортируйте их, чтобы они не заменяли существующие данные.
         </div>
         <form class="import__file">
             <InputFile id="@fileInputId" class="file-input" accept=".json" OnChange="@LoadFile" />
-            <button class="button button--outline reset-button" type="reset" @onclick="@ResetFile">Clear</button>
+            <button class="button button--outline reset-button" type="reset" @onclick="@ResetFile">Очистить</button>
         </form>
     </div>
-    <DataFileList Title="Export achievements"
+    <DataFileList Title="Экспорт достижений"
                   FileList="@AchievementFileList" @bind-Value="@AchievementSelectedFile" />
 </ExportLayout>
 

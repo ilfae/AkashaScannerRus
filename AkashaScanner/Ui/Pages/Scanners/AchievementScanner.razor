@@ -12,25 +12,25 @@
 
 <Scanner Enabled="@Enabled" OnSubmit="@HandleSubmit">
     <Instructions>
-        <li>Update game data below if needed.</li>
-        <li>Start the game. Game is currently <ProcessStatusDisplay />.</li>
-        <li>Open your <b>Achievements</b> screen and select any category. You should see a search bar near the top left corner.</li>
-        <li>Some achievements have conflicting names and will be skipped during the scan. You may manually provide the status of these achievements below.</li>
-        <li>You may optionally select a previously scanned record so that completed achievements will not be scanned again.</li>
-        <li>Click the "Start" button below to start scanning. Please do not move the mouse or press any buttons.</li>
-        <li>If you wish to interrupt the scan, minimize or exit the game (using Alt+Tab).</li>
+        <li>При необходимости обновите приведенные ниже данные об игре.</li>
+        <li>Начните игру. В данный момент игра находится в режиме <ProcessStatusDisplay />.</li>
+        <li>Откройте экран своих <b>достижений</b> и выберите любую категорию. Вы должны увидеть строку поиска в левом верхнем углу.</li>
+        <li> Некоторые достижения имеют противоречивые названия и будут пропущены во время проверки. Вы можете вручную указать статус этих достижений ниже.</li>
+        <li>При желании вы можете выбрать ранее отсканированную запись, чтобы завершенные достижения не сканировались повторно.</li>
+        <li>Нажмите кнопку "Старт" ниже, чтобы начать сканирование. Пожалуйста, не перемещайте мышь и не нажимайте никаких кнопок.</li>
+        <li>Если вы хотите прервать сканирование, сверните игру или выйдите из нее (используя Alt+Tab).</li>
     </Instructions>
     <DataUpdates>
-        <DataUpdate Title="Achievements" Collection="@AchievementCollection" Status="@AchievementCollectionStatus" EntryType="@(typeof(AchievementEntry))" />
+        <DataUpdate Title="Достижения" Collection="@AchievementCollection" Status="@AchievementCollectionStatus" EntryType="@(typeof(AchievementEntry))" />
     </DataUpdates>
     <Options>
-        <div class="options">
+        <div class="опции">
             @if (Overlapping.Count > 0)
             {
                 <AchievementEditor @bind-Value="ScrapConfig.AchievementOverrides" Options="@Overlapping" />
             }
-            <DataFileListOptional Title="Use an existing scan record"
-                                  TitleNegative="Do not use existing scan records"
+            <DataFileListOptional Title="Использовать существующую запись сканирования"
+                                  TitleNegative="Не использовать существующие записи сканирования"
                                   FileList="@FileList" @bind-Value="@SelectedFile" />
         </div>
     </Options>

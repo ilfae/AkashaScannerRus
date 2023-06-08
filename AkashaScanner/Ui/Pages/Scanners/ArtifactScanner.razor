@@ -11,19 +11,20 @@
 
 <Scanner Model="@Data" Enabled="@Enabled" OnSubmit="@HandleSubmit">
     <Instructions>
-        <li>Update game data below if needed.</li>
-        <li>Fill in the options below.</li>
-        <li>Start the game. Game is currently <ProcessStatusDisplay />.</li>
-        <li>Open the inventory. Select the <b>"Artifacts"</b> tab.</li>
-        <li>Sort items in <b>descending</b> order.</li>
-        <li>Scroll to the top so that the first row is completely visible.</li>
-        <li>Make sure the artifact's name on the right side is fully visible as well.</li>
-        <li>Click the "Start" button below to start scanning. Please do not move the mouse or press any buttons.</li>
-        <li>If you wish to interrupt the scan, minimize or exit the game (using Alt+Tab).</li>
+        <li>При необходимости обновите приведенные ниже данные об игре.</li>
+        <li>Заполните приведенные ниже параметры.</li>
+        <li>Начните игру. В данный момент игра находится в режиме <ProcessStatusDisplay />.</li>
+        <li>Откройте инвентарь. Выберите вкладку <b>"Артефакты"</b>.</li>
+        <li>Откройте инвентарь. Выберите вкладку <b>"Артефакты"</b>.</li>
+        <li>Сортируйте элементы в <b>порядке убывания</b>.</li>
+        <li>Прокрутите до самого верха, чтобы первая строка была видна полностью.</li>
+        <li>Убедитесь, что название артефакта с правой стороны также полностью видно.</li>
+        <li>Нажмите кнопку "Старт" ниже, чтобы начать сканирование. Пожалуйста, не перемещайте мышь и не нажимайте никаких кнопок.</li>
+        <li>Если вы хотите прервать сканирование, сверните игру или выйдите из нее (используя Alt+Tab).</li>
     </Instructions>
     <DataUpdates>
-        <DataUpdate Title="Artifacts" Collection="@ArtifactCollection" Status="@ArtifactCollectionStatus" EntryType="@(typeof(ArtifactEntry))" />
-        <DataUpdate Title="Characters" Collection="@CharacterCollection" Status="@CharacterCollectionStatus" EntryType="@(typeof(CharacterEntry))" />
+        <DataUpdate Title="Артефакты" Collection="@ArtifactCollection" Status="@ArtifactCollectionStatus" EntryType="@(typeof(ArtifactEntry))" />
+        <DataUpdate Title="Персонажи" Collection="@CharacterCollection" Status="@CharacterCollectionStatus" EntryType="@(typeof(CharacterEntry))" />
     </DataUpdates>
     <Options>
         <Field Label="@TravelerNameLabel">
@@ -42,10 +43,10 @@
 </Scanner>
 
 @code {
-    private const string TravelerNameLabel = "Traveler's Name";
-    private const string WandererNameLabel = "Wanderer's Name";
-    private const string MinLevelLabel = "Minimum Level";
-    private const string MinRarityLabel = "Minimum Rarity";
+    private const string TravelerNameLabel = "Имя путешественника";
+    private const string WandererNameLabel = "Имя странника";
+    private const string MinLevelLabel = "Минимальный уровень";
+    private const string MinRarityLabel = "Минимальная редкость";
 
     private IArtifactConfig Data = new DefaultFormData();
 

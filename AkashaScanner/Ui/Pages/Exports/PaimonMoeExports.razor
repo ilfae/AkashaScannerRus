@@ -13,19 +13,19 @@
 <ExportLayout Enabled="@(AchievementSelectedFile != null)" OnSubmit="@HandleSubmit">
     <div>
         <div class="import__notice">
-            If you use Paimon.moe not only for achievement tracking (e.g. wish counter),
-            consider exporting data from <a class="link" href="https://paimon.moe/settings" target="_blank">Paimon.moe</a> first and
-            importing it below so it will not override your existing data.
+            Если вы используете Paimon.moe не только для отслеживания достижений (например, счетчик желаний),
+            подумайте об экспорте данных из <a class="link" href="https://paimon.moe/settings" target="_blank">Paimon.moe</a> , а затем
+            импортировать их, чтобы они не заменяли существующие данные.
         </div>
         <form class="import__file">
             <InputFile id="@fileInputId" class="file-input" accept=".json" OnChange="@LoadFile" />
-            <button class="button button--outline reset-button" type="reset" @onclick="@ResetFile">Clear</button>
+            <button class="button button--outline reset-button" type="reset" @onclick="@ResetFile">Очистить</button>
         </form>
     </div>
-    <DataFileList Title="Export achievements"
+    <DataFileList Title="Экспорт достижений"
                   FileList="@AchievementFileList" @bind-Value="@AchievementSelectedFile" />
-    <DataFileListOptional Title="Export characters"
-                          TitleNegative="Do not export characters"
+    <DataFileListOptional Title="Экспорт персонажей"
+                          TitleNegative="Не экспортировать персонажей"
                           FileList="@CharacterFileList" @bind-Value="@CharacterSelectedFile" />
 </ExportLayout>
 

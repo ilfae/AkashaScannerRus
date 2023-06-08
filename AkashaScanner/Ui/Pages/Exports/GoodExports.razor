@@ -13,14 +13,14 @@
 @inject IJSRuntime JS
 
 <ExportLayout Enabled="@Enabled" OnSubmit="@HandleSubmit">
-    <DataFileListOptional Title="Export weapons"
-                          TitleNegative="Do not export weapons"
+    <DataFileListOptional Title="Экспорт оружия"
+                          TitleNegative="Не экспортировать оружие"
                           FileList="@WeaponFileList" @bind-Value="@SelectedWeaponFile" />
-    <DataFileListOptional Title="Export artifacts"
-                          TitleNegative="Do not export artifacts"
+    <DataFileListOptional Title="Экспорт артефактов"
+                          TitleNegative="Не экспортировать артефакты"
                           FileList="@ArtifactFileList" @bind-Value="@SelectedArtifactFile" />
-    <DataFileListOptional Title="Export characters"
-                          TitleNegative="Do not export characters"
+    <DataFileListOptional Title="Экспорт персонажей"
+                          TitleNegative="Не экспортировать персонажей"
                           FileList="@CharacterFileList" @bind-Value="@SelectedCharacterFile" />
 </ExportLayout>
 

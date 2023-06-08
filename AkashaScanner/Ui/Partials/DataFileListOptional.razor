@@ -32,10 +32,10 @@
     private static System.Random rand = new();
 
     [Parameter]
-    public string Title { get; set; } = "Select a scan record:";
+    public string Title { get; set; } = "Выберите запись сканирования:";
 
     [Parameter]
-    public string TitleNegative { get; set; } = "Do not select a record";
+    public string TitleNegative { get; set; } = "Не выбирать запись";
 
     [Parameter]
     public IDataFile<TOutput>? Value { get; set; } = default!;

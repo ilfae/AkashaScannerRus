@@ -4,7 +4,7 @@
 
 <div class="content">
     <div class="actions">
-        <button type="button" class="button button--primary button--action" disabled="@(!Enabled)" @onclick="OnSubmit">Save</button>
+        <button type="button" class="button button--primary button--action" disabled="@(!Enabled)" @onclick="OnSubmit">Сохранить</button>
     </div>
     <Form Context="Context">
         @if (Data != null)
@@ -17,7 +17,7 @@
 </div>
 
 @code {
-    private const string MultiplierLabel = "Scan Delay Multiplier";
+    private const string MultiplierLabel = "Задержка сканирования";
     private EditContext Context = new EditContext(new object());
     private bool Enabled { get; set; } = true;
 

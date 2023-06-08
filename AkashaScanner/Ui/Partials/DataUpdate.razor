@@ -15,15 +15,15 @@
         <div class="body">
             @if (Status.IsOutdated)
             {
-                <span>Outdated</span>
+                <span>Устаревший</span>
             }
             else
             {
-                <span>Last Updated:</span> <span>@($"{Status.LastUpdate:yyyy-MM-dd HH:mm}")</span>
+                <span>Последнее обновление:</span> <span>@($"{Status.LastUpdate:yyyy-MM-dd HH:mm}")</span>
             }
         </div>
         <div class="actions">
-            <button type="button" class="button button--primary" @onclick="OnUpdate" disabled="@(Status.IsLoading)">Update</button>
+            <button type="button" class="button button--primary" @onclick="OnUpdate" disabled="@(Status.IsLoading)">Обновить</button>
         </div>
     }
 </div>
