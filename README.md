@@ -1,11 +1,9 @@
-# Akasha Scanner
+# Akasha Scanner на русском
 
 Инструмент Genshin Impact, который извлекает данные вашей учетной записи, включая достижения, персонажей, артефакты и оружие.
 Оригинал ветки и софта : [AkashaScanner](https://github.com/xenesty/AkashaScanner) 
 
-Ветку и софт перевёл: [ilfae](https://github.com/ilfae)
-
-[Demo video for achievement scanning](https://github.com/xenesty/AkashaScanner/discussions/3)
+[Демонстрационное видео для сканирования достижений](https://github.com/xenesty/AkashaScanner/discussions/3)
 
 
 ## Содержание
@@ -14,6 +12,7 @@
 - [Начало работы](#Начало_работы)
 - [Использование](#Использование)
 - [FAQ](#faq)
+- [Перевод](#Перевод)
 - [Возможные обновления](#Возможные_обновления)
 - [Вклад](#Вклад)
     - [Сообщение об ошибках](#Сообщение_об_ошибках)
@@ -28,9 +27,9 @@
 - Экспортирует достижения (и персонажей) в формат, совместимый с [Paimon.moe](https://paimon.moe) и [Seelie.me](https://seelie.me) - инструмент для отслеживания прогресса достижений.
 - Экспортирует игровые данные в `GOOD`,
 формат, совместимый с такими инструментами, как
-[Genshin Optimizer](https://frzyc.github.io/genshin-optimizer),
-[GI DMG Calculator](https://gidmgcalculator.github.io/csb-g7is6)
-и [Aspirine's Genshin Impact Calculator](https://genshin.aspirine.su).
+[Оптимизатор Genshin](https://frzyc.github.io/genshin-optimizer),
+[Калькулятор GI DMG](https://gidmgcalculator.github.io/csb-g7is6)
+и [Калькулятор влияния Геншина Аспирина](https://genshin.aspirine.su).
 
 > **Примечание**
 >
@@ -85,6 +84,10 @@
 
 Однако нет никакой гарантии, что HoYoverse не предпримет никаких действий против сканера.
 Используйте на свой страх и риск.
+
+## Перевод
+Ветку и софт перевёл: [ilfae](https://github.com/ilfae)
+Данный софт перевёл для личного использования.
 
 ### Как работает сканер Akasha?
 Он использует мышь и клавиатуру для навигации по вашим достижениям/персонажам/инвентарю,
